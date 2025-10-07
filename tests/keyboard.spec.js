@@ -20,7 +20,7 @@ for(let i=0;i<3;i++)
     
 }
 
-/*
+
 //mouse actions
 
 await page.goto('https://demoapps.qspiders.com/ui/clickHold?sublist=0')
@@ -57,7 +57,7 @@ let target=await page.getByText('Laptop Accessories').boundingBox()
 await page.getByText('Laptop Cover').hover()
 await page.mouse.down()
 await page.mouse.move(target.x,target.y)
-await page.mouse.up()git revert 
+await page.mouse.up() 
 await page.waitForTimeout(3000)
 
 
@@ -81,5 +81,5 @@ await page.mouse.wheel(0,500)
 await page.goto('https://demoapps.qspiders.com/ui/scroll/newTabHorizontal')
 await page.waitForTimeout(1000)
 await page.mouse.wheel(500,0)
-*/
+
 })
