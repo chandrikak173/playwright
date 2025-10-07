@@ -67,7 +67,7 @@ export async function writetoExcelSingleCell(sheetname,path,rownum,colnum)
     await book.xlsx.readFile(path)    
     const sheet=book.getWorksheet(sheetname) //to add data to existing sheet
     //const sheet =book.addWorksheet(sheetname); //to add a new worksheet
-   // sheet.getRow(rownum).getCell(colnum).value='test'
+    // sheet.getRow(rownum).getCell(colnum).value='test'
     sheet.getCell(rownum,colnum).value='test'
     await book.xlsx.writeFile(path)
 }

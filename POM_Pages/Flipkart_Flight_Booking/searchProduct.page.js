@@ -10,8 +10,7 @@ export class SearchProduct
     {
         this.page=page
         this.searchBox=page.getByTitle('Search for Products, Brands and More').nth(1)
-        this.slider=page.locator('//div[@class="-suZGK"]/div[@class="Oyj7AF"]')
-        
+        this.slider=page.locator('//div[@class="-suZGK"]/div[@class="Oyj7AF"]')    
     }
     async moveSlider()
     {
@@ -24,14 +23,12 @@ export class SearchProduct
         if (box) {
         // Move mouse to center of the slider handle
         await this.page.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
-
         // Click and hold
         await this.page.mouse.down();
         // Move horizontally (e.g., +100 pixels to the right)
         await this.page.mouse.move(box.x + box.width / 2 + 100, box.y + box.height / 2, { steps: 10 });
         // Pause to see the drag in action (for debugging)
         await this.page.pause();
-
         // Release mouse
         await this.page.mouse.up();
         }

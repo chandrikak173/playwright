@@ -26,10 +26,8 @@ export class GetProductDetails
                 sheet.getRow(1).getCell(2).value="Prices"
                 for(let i=0;i<length;i++)
                 {
-                    //console.log(await ele.textContent());  
                     sheet.getRow(i+2).getCell(1).value=names[i]
                     sheet.getRow(i+2).getCell(2).value=prices[i]
-                    //sheet.getCell(,i).value=names[i]
                     await book.xlsx.writeFile(path)
                 }
     }
