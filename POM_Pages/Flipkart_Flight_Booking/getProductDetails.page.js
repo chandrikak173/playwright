@@ -14,6 +14,7 @@ export class GetProductDetails
     {
                 let path='C:/Users/vijay/OneDrive/Desktop/PlaywrightProject/testdata/testdata.xlsx'
                 //await expect(this.productName.last()).toBeVisible()
+                //test
                 let names=await this.productName.allTextContents()
                 let prices=await this.productPrice.allTextContents()
                 let length=names.length
