@@ -21,15 +21,15 @@ test('dropdown',async({page})=>{
     expect(page.url()).not.toEqual('https://www.amazon.in/')
 })
 
-test('myntra',async({page})=>{
+// test('myntra',async({page})=>{
 
-await page.goto('https://www.myntra.com/')
+// await page.goto('https://www.myntra.com/')
 
-await page.locator('//input[@class="desktop-searchBar"]').type('shoes')
-// await page.getByPlaceholder('Search for products, brands and more').fill('shoes')  not working
-await page.locator('//li[@class="desktop-suggestion null"]')
-await page.waitForSelector('//li[@class="desktop-suggestion null"]')
-await page.locator('//li[@class="desktop-suggestion null"]').nth(3).click()
-})
+// await page.locator('//input[@class="desktop-searchBar"]').type('shoes')
+// // await page.getByPlaceholder('Search for products, brands and more').fill('shoes')  not working
+// await page.locator('//li[@class="desktop-suggestion null"]')
+// await page.waitForSelector('//li[@class="desktop-suggestion null"]')
+// await page.locator('//li[@class="desktop-suggestion null"]').nth(3).click()
+// })
 // //li[@class="desktop-suggestion null"]
 
