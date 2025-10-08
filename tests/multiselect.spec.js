@@ -21,7 +21,7 @@ test('dropdown',async({page})=>{
     expect(page.url()).not.toEqual('https://www.amazon.in/')
 })
 
-test.only('myntra',async({page})=>{
+test('myntra',async({page})=>{
 
 await page.goto('https://www.myntra.com/')
 
